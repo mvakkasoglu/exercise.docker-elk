@@ -113,6 +113,7 @@ yellow open   metricbeat-6.1.2-2018.01.25 T_8jrMFoRYqL3IpZk1zU4Q   1   1      15
 
 ![bar graph](https://logz.io/wp-content/uploads/2018/02/bar-graph.png)
 
+* Click [here](./docker-elk/README.md) to view more detailed instructions.
 
 
 
@@ -121,8 +122,7 @@ yellow open   metricbeat-6.1.2-2018.01.25 T_8jrMFoRYqL3IpZk1zU4Q   1   1      15
 
 
 
-
-### How to Download
+## How to Download
 
 #### Part 1 - Forking the Project
 * To _fork_ the project, click the `Fork` button located at the top right of the project.
