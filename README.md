@@ -46,8 +46,7 @@
 
 * Execute the command below to download and install Metricbeat:
 	* `curl -L -O 
-https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.1
-.2-darwin-x86_64.tar.gz`
+https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.1.2-darwin-x86_64.tar.gz`
 	* `tar xzvf metricbeat-6.1.2-darwin-x86_64.tar.gz`
 
 * Configure the `metricbeat.yml` file to collect metrics on my operating system and ship them to the Elasticsearch container:
