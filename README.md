@@ -1,4 +1,4 @@
-# ELK For Flask
+# Docker ELK
 
 
 ## Overview
@@ -48,13 +48,13 @@
 * Execute the command below to download and install Metricbeat:
 	* `curl -L -O 
 https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-6.1
-.2-darwin-x86\_64.tar.gz`
-	* `tar xzvf metricbeat-6.1.2-darwin-x86\_64.tar.gz`
+.2-darwin-x86_64.tar.gz`
+	* `tar xzvf metricbeat-6.1.2-darwin-x86_64.tar.gz`
 
 * Configure the `metricbeat.yml` file to collect metrics on my operating system and ship them to the Elasticsearch container:
 
 ```
-cd metricbeat-6.1.2-darwin-x86\_64
+cd metricbeat-6.1.2-darwin-x86_64
 sudo vim metricbeat.yml
 ```
 
@@ -72,15 +72,15 @@ metricbeat.modules:
     - process
   enabled: true
   period: 10s
-  processes: \['.\*'\]
-  cpu\_ticks: false
+  processes: ['.*']
+  cpu_ticks: false
 
 fields:
   env: dev
 
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: \["localhost:9200"\]
+  hosts: ["localhost:9200"]
 ```
 
 * Last but not least, to start Metricbeat (again, on Mac only):
@@ -94,13 +94,13 @@ sudo ./metricbeat -e -c metricbeat.yml -d "publish"
 
 
 * After a second or two, you will see a Metricbeat index created in Elasticsearch, and it’s pattern identified in Kibana.
-  * `curl -XGET 'localhost:9200/\_cat/indices?v&pretty'`
+  * `curl -XGET 'localhost:9200/_cat/indices?v&pretty'`
 
 
 ```
 health status index                       uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 yellow open   .kibana                     XPHh2YDCSKKyz7PtmHyrMw   1   1          2            1       67kb           67kb
-yellow open   metricbeat-6.1.2-2018.01.25 T\_8jrMFoRYqL3IpZk1zU4Q   1   1      15865            0      3.4mb          3.4mb
+yellow open   metricbeat-6.1.2-2018.01.25 T_8jrMFoRYqL3IpZk1zU4Q   1   1      15865            0      3.4mb          3.4mb
 ```
 
 
