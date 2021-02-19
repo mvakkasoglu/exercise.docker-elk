@@ -2,21 +2,7 @@
 
 
 ## Overview
-* Prerequisites
-* Cloning Project
-* Objective
-* Description
 
-### Prerequisites
-* Install GitCLI
-* Install Python
-* Install Docker
-* Install Docker Compose
-
-
-
-
-## Instructions
 * **Objective**
 	* Use a [Dockerized ELK Stack](https://github.com/platformps/sba.deploy-flask-app-to-elk) that results in three Docker containers running in parallel:
 		* container for Elasticsearch
@@ -28,13 +14,16 @@
 	* Linux and other Unix-based systems are the most common installation setup.
 	* The intent of this project is to leverage Docker images to manifest the ELK stack.
 
+### Prerequisites
+* Install GitCLI
+* Install Python
+* Install Docker
+* Install Docker Compose
 
 
 
 
-
-
-
+## Instructions
 
 ### Shipping data into the Dockerized ELK Stack
 * After verifying that the stack is running properly, forward some data into the stack.
