@@ -16,7 +16,6 @@
 
 ### Prerequisites
 * Install GitCLI
-* Install Python
 * Install Docker
 * Install Docker Compose
 
