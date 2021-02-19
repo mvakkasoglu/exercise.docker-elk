@@ -3,6 +3,12 @@
 
 ## Overview
 
+* **Prerequisites**
+	* Install GitCLI
+	* Install Docker
+	* Install Docker Compose
+
+
 * **Objective**
 	* Use a [Dockerized ELK Stack](https://github.com/platformps/sba.deploy-flask-app-to-elk) that results in three Docker containers running in parallel:
 		* container for Elasticsearch
@@ -13,12 +19,6 @@
 	* The ELK Stack (Elasticsearch, Logstash and Kibana) can be installed on a variety of different operating systems and in various different setups.
 	* Linux and other Unix-based systems are the most common installation setup.
 	* The intent of this project is to leverage Docker images to manifest the ELK stack.
-
-### Prerequisites
-* Install GitCLI
-* Install Docker
-* Install Docker Compose
-
 
 
 
