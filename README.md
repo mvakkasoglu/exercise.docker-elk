@@ -114,16 +114,6 @@ yellow open   metricbeat-6.1.2-2018.01.25 T\_8jrMFoRYqL3IpZk1zU4Q   1   1      1
 
 ![bar graph](https://logz.io/wp-content/uploads/2018/02/bar-graph.png)
 
-## Endnotes
-
-* For a sandbox environment used for development and testing, Docker is one of the easiest and most efficient ways to set up the stack.
-* Perhaps surprisingly, ELK is being increasingly used on Docker for production environments as well, as reflected in this survey I conducted a while ago:
-
-![twitter](https://logz.io/wp-content/uploads/2018/02/twitter.png)
-
-* Of course, a production ELK stack entails a whole set of different considerations that involve cluster setups, resource configurations, and various other architectural elements.
-
-
 
 
 
